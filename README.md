@@ -33,6 +33,9 @@ version.
 
 `node["monitor"]["additional_client_attributes"]` - Additional client
 attributes to be passed to the sensu_client LWRP.
+An example: `{ keepalive: { handlers: ["mailer"], refresh: 600 } }` -
+If a node fails the keepalive check, it will email out and continue every
+10 minutes.
 
 `node["monitor"]["default_handlers"]` - Default event handlers.
 
